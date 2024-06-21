@@ -1,0 +1,329 @@
+:root {
+
+    /* (sub-heading at the top of the app UI) */
+    --Pale-Violet: hsl(276, 100%, 81%);
+
+    /* (chat on the left) */
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    /* (chat on the right) */
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+    /* (placeholder text) */
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    /*  (main heading) */
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    /*  (paragraph) */
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+    /* (app background) */
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+
+    /* (radio button outline) */
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+    /* (submit button background) */
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Rubik", sans-serif;;
+}
+
+p {
+    color: var(--Dark-Grayish-Violet);
+    line-height: 1.5;
+}
+
+.top {
+    height: 500px;
+    width: 30%;
+    background-color: var(--Light-Magenta);
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    height: 500px;
+    width: 30%;
+    background-color: var(--Light-Grayish-Violet);
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+
+}
+
+.main {
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    width: 75%;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.main-left {
+    width: 100%;
+    padding: 0 5rem;
+
+
+}
+
+.main-right {
+    width: 80%;
+
+}
+
+.main-right h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Start Mobile Desgin */
+.mobile {
+    width: 320px;
+    height: 530px;
+    border: 12px solid white;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+    background-color: var(--Light-Grayish-Violet);
+}
+
+.mobile-nav {
+    width: 60%;
+    height: 25px;
+    position: absolute;
+    background-color: white;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.mobile-top {
+    background-image: linear-gradient(90deg, var(--Light-Violet), var(--Light-Magenta));
+    height: 16%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10px 10px;
+    color: white;
+}
+
+.mobile-top-img {
+    background-image: url("../images/avatar.jpg");
+    background-size: contain;
+
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.mobile-top-header {
+    /* background-color: red; */
+    width: 70%;
+}
+
+.mobile-body {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 10px 5px;
+}
+
+.left-msg {
+    width: 75%;
+    background-color: var(--Grayish-Blue);
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-bottom-left-radius: 5px !important;
+}
+
+.right-msg {
+    width: 75%;
+    background-color: white;
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-bottom-right-radius: 5px !important;
+
+    align-self: flex-end;
+}
+
+.w-50 {
+    width: max-content;
+    /* background-color: red; */
+
+}
+
+.right-msg-img {
+    width: 75%;
+    margin: 3px;
+    padding: 5px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.right-msg-img img {
+    width: 30%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+}
+
+.left-msg-radio{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(90deg,var(--Light-Magenta),var(--Light-Violet));
+    padding: 5px;
+    margin: 3px;
+    border-radius: 15px;
+    color: white;
+}
+.input input {
+  margin-right: 5px;
+}
+.left-msg-radio span{
+    font-size: 16px;
+    font-weight: bold;
+}
+ .change-color{
+   
+    accent-color: var(--Very-Light-Magenta );
+}
+.msg{
+    width: 100%;
+    position: relative;
+ 
+ }
+.msg input{
+   width: 100%;
+   padding: 10px;
+   margin-top: 10px;
+   border: none;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+.msg button{
+     position: absolute;
+     top: 35%;
+     right: 5%;
+     width: 25px;
+     height: 25px;
+     border: none;
+     background-color: var(--Very-Dark-Desaturated-Violet) ;
+     color: white;
+     border-radius: 50% ;
+     -webkit-border-radius: 50% ;
+     -moz-border-radius: 50% ;
+     -ms-border-radius: 50% ;
+     -o-border-radius: 50% ;
+}
+
+@media screen and (min-width:375px) and (max-width:768px) {
+    body{
+        overflow-y: scroll;
+    }
+
+    .top {
+        position: absolute;
+        height: 400px;
+        width: 30%;
+        background-color: var(--Light-Magenta);
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 100%;
+    
+    }
+    
+    .bottom {
+        position: absolute;
+        bottom: -50%;
+        right: -10%;
+        height: 500px;
+        width: 30%;
+        background-color: var(--Light-Grayish-Violet);
+        border-top-left-radius: 100%;
+        border-top-right-radius: 0%;
+    
+    }
+    
+    .main {
+        
+        position: absolute;
+        width: 90%;
+        flex-direction: column;
+        margin-top: 9rem;
+     
+    }
+    
+    .main-left {
+        width: 100%;
+        padding: 0 5rem;
+    
+    }
+    
+    .main-right {
+        width: 70%;
+       text-align: center;
+        margin: 3rem 0 3rem 8rem;
+
+    
+    }
+     
+    
+}
